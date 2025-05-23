@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="97">
+  <author>NWOHater</author>
+  <version>1.0.0.0</version>
+
+  <title>
+    <en>Farmer's Dashboard</en>
+  </title>
+
+  <description>
+    <en><![CDATA[
+Exports in-game data (time, month, etc.) every 5 real minutes to JSON for use in external apps.
+]]></en>
+  </description>
+
+  <multiplayer supported="true" />
+  <iconFilename>icon.dds</iconFilename>
+
+  <scriptFiles>
+    <script file="DataExporter.lua" />
+  </scriptFiles>
+  <extraSourceFiles>
+    <sourceFile filename="DataExporter.lua" />
+  </extraSourceFiles>
+</modDesc>
