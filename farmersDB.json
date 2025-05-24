@@ -1,0 +1,776 @@
+{
+  "time": "08:31",
+  "date": {
+    "day": 3,
+    "month": 12,
+    "monthName": "December"
+  },
+  "weather": {
+    "condition": "Snow",
+    "temperatureF": 26.2,
+    "forecast": [
+  {
+      "hour": "11:00",
+      "condition": "Partly Cloudy"
+    },
+    {
+      "hour": "14:00",
+      "condition": "Partly Cloudy"
+    },
+    {
+      "hour": "17:00",
+      "condition": "Partly Cloudy"
+    },
+    {
+      "hour": "20:00",
+      "condition": "Partly Cloudy"
+    }
+    ]
+  },
+  "farms": [
+    {
+      "farmId": 1,
+      "name": "",
+      "money": 0.00,
+      "isPlayerFarm": true
+    },
+    {
+      "farmId": 2,
+      "name": "My farm",
+      "money": 401329.78,
+      "isPlayerFarm": false
+    },
+    {
+      "farmId": 3,
+      "name": "",
+      "money": 0.00,
+      "isPlayerFarm": false
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 19,
+      "fruitType": "MAIZE",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 20,
+      "fruitType": "SUGARBEET",
+      "growthState": 7,
+      "weedState": 8,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 23,
+      "fruitType": "PEA",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 22,
+      "fruitType": "UNKNOWN",
+      "growthState": 0,
+      "weedState": 0,
+      "groundType": "CULTIVATED",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 24,
+      "fruitType": "SPINACH",
+      "growthState": 7,
+      "weedState": 7,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 25,
+      "fruitType": "PARSNIP",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 31,
+      "fruitType": "WHEAT",
+      "growthState": 8,
+      "weedState": 5,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 30,
+      "fruitType": "GREENBEAN",
+      "growthState": 7,
+      "weedState": 0,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 29,
+      "fruitType": "GREENBEAN",
+      "growthState": 5,
+      "weedState": 7,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 28,
+      "fruitType": "BEETROOT",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 27,
+      "fruitType": "PARSNIP",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 26,
+      "fruitType": "SPINACH",
+      "growthState": 7,
+      "weedState": 7,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 12,
+      "fruitType": "GRASS",
+      "growthState": 5,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 11,
+      "fruitType": "GRASS",
+      "growthState": 4,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 84,
+      "fruitType": "GRASS",
+      "growthState": 4,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 45,
+      "fruitType": "GRASS",
+      "growthState": 4,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 44,
+      "fruitType": "GRASS",
+      "growthState": 5,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 34,
+      "fruitType": "GRASS",
+      "growthState": 4,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 35,
+      "fruitType": "GRASS",
+      "growthState": 4,
+      "weedState": 0,
+      "groundType": "GRASS",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 43,
+      "fruitType": "SORGHUM",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 46,
+      "fruitType": "SUGARBEET",
+      "growthState": 7,
+      "weedState": 8,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 36,
+      "fruitType": "GREENBEAN",
+      "growthState": 5,
+      "weedState": 7,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 37,
+      "fruitType": "PARSNIP",
+      "growthState": 7,
+      "weedState": 0,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 38,
+      "fruitType": "SUGARBEET",
+      "growthState": 7,
+      "weedState": 5,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 41,
+      "fruitType": "GREENBEAN",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 50,
+      "fruitType": "POTATO",
+      "growthState": 6,
+      "weedState": 4,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 40,
+      "fruitType": "SOYBEAN",
+      "growthState": 5,
+      "weedState": 9,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 51,
+      "fruitType": "MAIZE",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 2,
+      "fruitType": "WHEAT",
+      "growthState": 10,
+      "weedState": 0,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 3,
+      "fruitType": "CANOLA",
+      "growthState": 1,
+      "weedState": 0,
+      "groundType": "DIRECT_SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 4,
+      "fruitType": "UNKNOWN",
+      "growthState": 0,
+      "weedState": 0,
+      "groundType": "STUBBLE_TILLAGE",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 5,
+      "fruitType": "CANOLA",
+      "growthState": 9,
+      "weedState": 0,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 8,
+      "fruitType": "BEETROOT",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 10,
+      "fruitType": "BEETROOT",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 9,
+      "fruitType": "WHEAT",
+      "growthState": 8,
+      "weedState": 6,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 15,
+      "fruitType": "SORGHUM",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 7,
+      "fruitType": "OAT",
+      "growthState": 5,
+      "weedState": 9,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 6,
+      "fruitType": "GREENBEAN",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 83,
+      "fruitType": "PEA",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 82,
+      "fruitType": "COTTON",
+      "growthState": 9,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 56,
+      "fruitType": "CANOLA",
+      "growthState": 11,
+      "weedState": 0,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 57,
+      "fruitType": "SUNFLOWER",
+      "growthState": 6,
+      "weedState": 7,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 58,
+      "fruitType": "SOYBEAN",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 55,
+      "fruitType": "SUGARBEET",
+      "growthState": 7,
+      "weedState": 9,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 60,
+      "fruitType": "PARSNIP",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 59,
+      "fruitType": "COTTON",
+      "growthState": 9,
+      "weedState": 7,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 65,
+      "fruitType": "SUNFLOWER",
+      "growthState": 6,
+      "weedState": 8,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 62,
+      "fruitType": "SOYBEAN",
+      "growthState": 5,
+      "weedState": 8,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 64,
+      "fruitType": "SOYBEAN",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 61,
+      "fruitType": "CARROT",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 81,
+      "fruitType": "SPINACH",
+      "growthState": 7,
+      "weedState": 4,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 85,
+      "fruitType": "SUNFLOWER",
+      "growthState": 6,
+      "weedState": 9,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 90,
+      "fruitType": "CARROT",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 91,
+      "fruitType": "WHEAT",
+      "growthState": 8,
+      "weedState": 8,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 89,
+      "fruitType": "SORGHUM",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 88,
+      "fruitType": "CARROT",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 86,
+      "fruitType": "PEA",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 87,
+      "fruitType": "WHEAT",
+      "growthState": 8,
+      "weedState": 4,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 78,
+      "fruitType": "OAT",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 79,
+      "fruitType": "PEA",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 77,
+      "fruitType": "PARSNIP",
+      "growthState": 5,
+      "weedState": 3,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 69,
+      "fruitType": "SPINACH",
+      "growthState": 7,
+      "weedState": 8,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 76,
+      "fruitType": "SORGHUM",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 70,
+      "fruitType": "UNKNOWN",
+      "growthState": 0,
+      "weedState": 0,
+      "groundType": "PLOWED",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 71,
+      "fruitType": "COTTON",
+      "growthState": 9,
+      "weedState": 9,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 72,
+      "fruitType": "SUNFLOWER",
+      "growthState": 6,
+      "weedState": 7,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 68,
+      "fruitType": "MAIZE",
+      "growthState": 5,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 32,
+      "fruitType": "WHEAT",
+      "growthState": 8,
+      "weedState": 4,
+      "groundType": "HARVEST_READY",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 14,
+      "fruitType": "SORGHUM",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 21,
+      "fruitType": "SOYBEAN",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 52,
+      "fruitType": "PEA",
+      "growthState": 5,
+      "weedState": 5,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 53,
+      "fruitType": "PARSNIP",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 75,
+      "fruitType": "CANOLA",
+      "growthState": 9,
+      "weedState": 8,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 13,
+      "fruitType": "POTATO",
+      "growthState": 6,
+      "weedState": 4,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 16,
+      "fruitType": "SPINACH",
+      "growthState": 7,
+      "weedState": 5,
+      "groundType": "SOWN",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 49,
+      "fruitType": "GREENBEAN",
+      "growthState": 5,
+      "weedState": 4,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    },
+    {
+      "fieldId": 66,
+      "fruitType": "CANOLA",
+      "growthState": 9,
+      "weedState": 6,
+      "groundType": "HARVEST_READY_OTHER",
+      "farmId": 0,
+      "farmName": "(Unowned)"
+    }
+  ],
+  "specialOffers": [
+    {
+      "brand": "Grimme",
+      "name": "Evo 290",
+      "price": 112928.16,
+      "originalPrice": 205000.00,
+      "percentOff": 45,
+      "age": 14
+    },
+    {
+      "brand": "New Holland",
+      "name": "980CR 18-30",
+      "price": 33066.39,
+      "originalPrice": 88000.00,
+      "percentOff": 62,
+      "age": 38
+    },
+    {
+      "brand": "ALPEGO",
+      "name": "K-Force 400",
+      "price": 7787.54,
+      "originalPrice": 20000.00,
+      "percentOff": 61,
+      "age": 31
+    }
+  ],
+  "metadata": {
+    "generatedBy": "DataExporterMod",
+    "version": "1.0",
+    "updatedAt": "Day 30, 08:31"
+  }
+}
