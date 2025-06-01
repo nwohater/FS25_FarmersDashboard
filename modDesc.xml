@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="97">
   <author>NWOHater</author>
-  <version>1.0.0.5</version>
+  <version>1.0.0.6</version>
 
   <title>
     <en>Farmer's Dashboard</en>
@@ -17,9 +17,9 @@ Exports in-game data (time, month, etc.) every 5 real minutes to JSON for use in
   <iconFilename>icon.dds</iconFilename>
 
   <scriptFiles>
-    <script file="DataExporter.lua" />
+    <script file="FarmersDashboard.lua" />
   </scriptFiles>
   <extraSourceFiles>
-    <sourceFile filename="DataExporter.lua" />
+    <sourceFile filename="FarmersDashboard.lua" />
   </extraSourceFiles>
 </modDesc>
