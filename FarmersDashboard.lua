@@ -23,11 +23,11 @@ local WEATHER_CONDITIONS = {
 }
 
 function DataExporter:loadMap(name)
-    --if not g_currentMission:getIsServer() then
-    --    print("DataExporter: Client instance detected - mod disabled.")
-    --    DataExporter = nil
-    --    return
-    --end
+    if not g_currentMission:getIsServer() then
+        print("DataExporter: Client instance detected - mod disabled.")
+        DataExporter = nil
+        return
+    end
     print("DataExporter: Mod loaded — writing JSON every 5 real minutes.")
     self:linkFarmlandsToFields()
     self:loadFarmInfo()
@@ -49,7 +49,7 @@ end
 
 function DataExporter:update(dt)
     self.timer = self.timer + dt
-    if self.timer >= 120000 then
+    if self.timer >= 300000 then
         self:writeJSON()
         self.timer = 0
     end
@@ -85,18 +85,54 @@ function DataExporter:loadFarmInfo()
     self.farmInfoMap = farmInfoMap
 end
 
+-- function DataExporter:getSpecialOffers()
+--     local offers = {}
+--     if not g_currentMission or not g_currentMission.vehicleSaleSystem then return offers end
+--     for _, saleItem in ipairs(g_currentMission.vehicleSaleSystem.items) do
+--         local xml = saleItem.xmlFilename
+--         local matchedStoreItem = nil
+--         for _, storeItem in pairs(g_storeManager.items) do
+--             if storeItem.xmlFilename == xml then
+--                 matchedStoreItem = storeItem
+--                 break
+--             end
+--         end
+--         if matchedStoreItem then
+--             local brandRaw = matchedStoreItem.brandNameRaw or ""
+--             local brand = self:getBrandTitle(brandRaw)
+--             local name = matchedStoreItem.name or "(Unknown Name)"
+--             local price = saleItem.price or 0
+--             local originalPrice = matchedStoreItem.price or price
+--             local percentOff = originalPrice > 0 and math.floor(((originalPrice - price) / originalPrice) * 100 + 0.5) or 0
+--             local age = saleItem.age or 0
+--             table.insert(offers, string.format([[{
+--       "brand": "%s",
+--       "name": "%s",
+--       "price": %.2f,
+--       "originalPrice": %.2f,
+--       "percentOff": %d,
+--       "age": %d
+--     }]], self:escape(brand), self:escape(name), price, originalPrice, percentOff, age))
+--         end
+--     end
+--     return table.concat(offers, ",\n    ")
+-- end
+
 function DataExporter:getSpecialOffers()
     local offers = {}
     if not g_currentMission or not g_currentMission.vehicleSaleSystem then return offers end
+
     for _, saleItem in ipairs(g_currentMission.vehicleSaleSystem.items) do
         local xml = saleItem.xmlFilename
         local matchedStoreItem = nil
+
         for _, storeItem in pairs(g_storeManager.items) do
             if storeItem.xmlFilename == xml then
                 matchedStoreItem = storeItem
                 break
             end
         end
+
         if matchedStoreItem then
             local brandRaw = matchedStoreItem.brandNameRaw or ""
             local brand = self:getBrandTitle(brandRaw)
@@ -105,18 +141,25 @@ function DataExporter:getSpecialOffers()
             local originalPrice = matchedStoreItem.price or price
             local percentOff = originalPrice > 0 and math.floor(((originalPrice - price) / originalPrice) * 100 + 0.5) or 0
             local age = saleItem.age or 0
+
+            -- 🟢 Add the type/category of the equipment
+            local vehicleType = matchedStoreItem.categoryName or "Unknown"
+
             table.insert(offers, string.format([[{
       "brand": "%s",
       "name": "%s",
       "price": %.2f,
       "originalPrice": %.2f,
       "percentOff": %d,
-      "age": %d
-    }]], self:escape(brand), self:escape(name), price, originalPrice, percentOff, age))
+      "age": %d,
+      "type": "%s"
+    }]], self:escape(brand), self:escape(name), price, originalPrice, percentOff, age, self:escape(vehicleType)))
         end
     end
+
     return table.concat(offers, ",\n    ")
 end
+
 
 function DataExporter:getBrandTitle(brandRaw)
     if not brandRaw or brandRaw == "" then
