@@ -230,17 +230,11 @@ function DataExporter:getFieldsExport()
                 end
             end
 
-            -- Get fertilization and lime levels at field center
+            -- Fertilization and lime levels
+            -- TODO: These are placeholders (0) until correct FS25 API methods are identified
+            -- The API for accessing spray/fertilization and lime levels may have changed in FS25
             local sprayLevel = 0
             local limeLevel = 0
-
-            if g_currentMission.fieldGroundSystem then
-                -- Get spray/fertilization level (0-3, where 3 is fully fertilized)
-                sprayLevel = g_currentMission.fieldGroundSystem:getSprayLevelAtWorldPos(x, z) or 0
-
-                -- Get lime level (0-3, where 3 is fully limed)
-                limeLevel = g_currentMission.fieldGroundSystem:getLimeLevelAtWorldPos(x, z) or 0
-            end
 
             table.insert(fields, string.format([[{
       "fieldId": %d,
