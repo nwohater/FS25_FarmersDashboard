@@ -230,19 +230,21 @@ function DataExporter:getFieldsExport()
                 end
             end
 
-            -- Get fertilization and lime levels from field state
+            -- Get fertilization, lime, and weed levels from field state
             local sprayLevel = 0
             local limeLevel = 0
+            local weedState = 0
 
             -- Update field state to get current values
             if field.updateFieldState then
                 field:updateFieldState(x, z)
             end
 
-            -- Try to get field state which contains spray and lime levels
+            -- Try to get field state which contains spray, lime, and weed levels
             if field.fieldState then
                 sprayLevel = field.fieldState.sprayLevel or 0
                 limeLevel = field.fieldState.limeLevel or 0
+                weedState = field.fieldState.weedState or 0
             end
 
             table.insert(fields, string.format([[{
@@ -253,9 +255,10 @@ function DataExporter:getFieldsExport()
       "fieldAreaHa": %.2f,
       "sprayLevel": %d,
       "limeLevel": %d,
+      "weedState": %d,
       "farmId": %d,
       "farmName": "%s"
-    }]], farmland.id or -1, self:escape(fruitTypeName), growthState or 0, self:escape(growthStateLabel), field.areaHa or 0, sprayLevel, limeLevel, farmId, self:escape(farmName)))
+    }]], farmland.id or -1, self:escape(fruitTypeName), growthState or 0, self:escape(growthStateLabel), field.areaHa or 0, sprayLevel, limeLevel, weedState, farmId, self:escape(farmName)))
         end
     end
     return table.concat(fields, ",\n    ")
