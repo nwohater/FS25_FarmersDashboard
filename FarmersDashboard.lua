@@ -234,6 +234,11 @@ function DataExporter:getFieldsExport()
             local sprayLevel = 0
             local limeLevel = 0
 
+            -- Update field state to get current values
+            if field.updateFieldState then
+                field:updateFieldState(x, z)
+            end
+
             -- Try to get field state which contains spray and lime levels
             if field.fieldState then
                 sprayLevel = field.fieldState.sprayLevel or 0
