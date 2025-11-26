@@ -230,15 +230,29 @@ function DataExporter:getFieldsExport()
                 end
             end
 
+            -- Get fertilization and lime levels at field center
+            local sprayLevel = 0
+            local limeLevel = 0
+
+            if g_currentMission.fieldGroundSystem then
+                -- Get spray/fertilization level (0-3, where 3 is fully fertilized)
+                sprayLevel = g_currentMission.fieldGroundSystem:getSprayLevelAtWorldPos(x, z) or 0
+
+                -- Get lime level (0-3, where 3 is fully limed)
+                limeLevel = g_currentMission.fieldGroundSystem:getLimeLevelAtWorldPos(x, z) or 0
+            end
+
             table.insert(fields, string.format([[{
       "fieldId": %d,
       "fruitType": "%s",
       "growthState": %d,
       "growthStateLabel": "%s",
       "fieldAreaHa": %.2f,
+      "sprayLevel": %d,
+      "limeLevel": %d,
       "farmId": %d,
       "farmName": "%s"
-    }]], farmland.id or -1, self:escape(fruitTypeName), growthState or 0, self:escape(growthStateLabel), field.areaHa or 0, farmId, self:escape(farmName)))
+    }]], farmland.id or -1, self:escape(fruitTypeName), growthState or 0, self:escape(growthStateLabel), field.areaHa or 0, sprayLevel, limeLevel, farmId, self:escape(farmName)))
         end
     end
     return table.concat(fields, ",\n    ")
