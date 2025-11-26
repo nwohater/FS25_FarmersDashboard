@@ -28,7 +28,7 @@ function DataExporter:loadMap(name)
         DataExporter = nil
         return
     end
-    print("DataExporter: Mod loaded — writing JSON every 5 real minutes.")
+    print("DataExporter: Mod loaded — writing JSON every 2 real minutes (testing mode).")
     self:linkFarmlandsToFields()
     self:loadFarmInfo()
 end
@@ -49,7 +49,7 @@ end
 
 function DataExporter:update(dt)
     self.timer = self.timer + dt
-    if self.timer >= 300000 then
+    if self.timer >= 120000 then  -- 2 minutes (120,000 milliseconds) for testing
         self:writeJSON()
         self.timer = 0
     end
