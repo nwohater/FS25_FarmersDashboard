@@ -230,11 +230,15 @@ function DataExporter:getFieldsExport()
                 end
             end
 
-            -- Fertilization and lime levels
-            -- TODO: These are placeholders (0) until correct FS25 API methods are identified
-            -- The API for accessing spray/fertilization and lime levels may have changed in FS25
+            -- Get fertilization and lime levels from field state
             local sprayLevel = 0
             local limeLevel = 0
+
+            -- Try to get field state which contains spray and lime levels
+            if field.fieldState then
+                sprayLevel = field.fieldState.sprayLevel or 0
+                limeLevel = field.fieldState.limeLevel or 0
+            end
 
             table.insert(fields, string.format([[{
       "fieldId": %d,
